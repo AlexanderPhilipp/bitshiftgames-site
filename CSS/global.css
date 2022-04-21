@@ -1,0 +1,13 @@
+:root{
+    --background1: #e9eaf1;
+    --contrast1: #272635;
+    --contrast2: #56717b;
+    --highlight1: #ff4365;
+    --highlight2: #00c2bf;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background1);
+}
