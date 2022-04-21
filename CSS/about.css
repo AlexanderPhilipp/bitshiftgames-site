@@ -5,8 +5,3 @@
     --highlight1: #ff4365;
     --highlight2: #00c2bf;
 }
-
-nav{
-    background-color: var(--contrast1);
-    height: 150px;
-}
