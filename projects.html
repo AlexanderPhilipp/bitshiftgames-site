@@ -3,21 +3,39 @@
     <head>
         <title>Projects</title>
 
+        <link rel="stylesheet" href="./CSS/projects.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link rel="stylesheet" href="./CSS/global.css">
         <link rel="stylesheet" href="./CSS/navmenu.css">
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+      <div class="navMenu" id="navMenu">
+        <a href="./index.html" class="navMenuLogo"><img src="Assets/Logo.png" height="60px" width="60px"></a> 
+        <div class="navMenuContainer">
+            <a class="navElement" href="./index.html">Home</a>
+            <a class="navElementActive">Games</a>
+            <a class="navElement" href="./contact.html">Contact</a>
+            <a class="navElement" href="./about.html">About</a>
+        </div>
+        <a class="navMenuToggle" href="javascript:void(0);" onclick="toggleNavMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <script>
+            function toggleNavMenu(){
+                var x = document.getElementById("navMenu");
+                if (x.className === "navMenu") {
+                  x.className += "-expanded";
+                } else {
+                  x.className = "navMenu";
+                }
+            }
+        </script>
+      </div>
     </body>
 </html>

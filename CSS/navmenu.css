@@ -6,7 +6,120 @@
     --highlight2: #00c2bf;
 }
 
-nav{
+.navMenu {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    
+    overflow: hidden;
     background-color: var(--contrast1);
-    height: 150px;
+    height: 70px;
+
+    transition-duration: 0.3s;
 }
+.navMenu-expanded{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    
+    overflow: hidden;
+    background-color: var(--contrast1);
+    height: 70px;
+
+    transition-duration: 0.3s;
+}
+    .navMenuContainer {
+        width: calc(100% - 110px);
+        float: right;
+        height: 70px;
+
+        top: 0px;
+        right: 10px;
+        position: absolute;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .navMenuLogo{
+        top: 5px;
+        left: 10px;
+        position: absolute;
+    }
+    .navElement{
+        margin: 10px;
+        color: #bebfc5;;
+        text-decoration: none;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        transition-duration: 0.3s;
+    }
+    .navElement:hover{
+        color: #e9eaf1;
+    }
+    .navElementActive{
+        margin: 10px;
+        color: #e9eaf1;
+        text-decoration: none;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    } 
+
+    .navMenuToggle{
+        text-decoration: none;
+
+        visibility: hidden;
+        position: absolute;
+
+        width: 60px;
+        height: 60px;
+
+        top: 5px;
+        right: 20px;
+
+        color: var(--background1);
+
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+
+ @media (max-width: 500px) {
+    .navMenu-expanded{
+        top: 0;
+        position: fixed;
+        width: 100%;
+        
+        overflow: hidden;
+        background-color: var(--contrast1);
+        height: 100%;
+    
+        transition-duration: 0.3s;
+    }
+    .navMenuToggle{
+        visibility: visible;
+    }
+    .navMenuContainer{
+        width: 100%;
+        height: calc(100% - 80px);
+        padding: 0px;
+        flex-direction: column;
+
+        top: 80px;
+        right: 0px;
+        position: absolute;
+    }
+ }
