@@ -1,11 +1,3 @@
-:root{
-    --background1: #e9eaf1;
-    --contrast1: #272635;
-    --contrast2: #56717b;
-    --highlight1: #ff4365;
-    --highlight2: #00c2bf;
-}
-
 .navMenu {
     top: 0;
     position: fixed;
@@ -16,6 +8,8 @@
     height: 70px;
 
     transition-duration: 0.3s;
+
+    z-index: 100;
 }
 .navMenu-expanded{
     top: 0;
