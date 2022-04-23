@@ -1,0 +1,63 @@
+.swipeGallary{
+    margin-top: 70px;
+    background-color: #cacbd3;
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameDescriptionSection{
+    background-color: var(--contrast2);
+    color: var(--background1);
+    
+    width: calc(100% - 80px);
+    min-height: 350px;
+    
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.gameInfoSection{
+    background-color: var(--background1);
+    color: var(--contrast1);
+    
+    width: calc(100% - 80px);
+
+    min-height: 350px;
+
+    text-align: center;
+    
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.downloadContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+    .downloadContainer a{
+        text-decoration: none;
+        padding: 15px;
+        max-width: 100px;
+        color: var(--background1);
+        background-color: var(--contrast2);
+        transition: 0.2s;
+    }
+
+    .downloadContainer a:hover{
+        background-color: var(--highlight1);
+    }
