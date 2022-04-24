@@ -1,0 +1,8 @@
+.infoBody{
+    margin-top: 70px;
+    background-color: var(--background1);
+    max-width: 800px;
+    width: calc(100% - 60px);
+    height: 90vh;
+    padding: 30px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Alexander Philipp">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Legal Notice</title>
+
+        <link rel="stylesheet" href="./CSS/imprint.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,500;1,300&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./CSS/global.css">
+        <link rel="stylesheet" href="./CSS/navmenu.css">
+        <link rel="stylesheet" href="./CSS/footer.css">
+    </head>
+    <body>
+        <div class="navMenu" id="navMenu">
+            <a href="./index.html" class="navMenuLogo"><img
+                    src="Assets/Logo.png"
+                    height="60px" width="60px"></a>
+            <div class="navMenuContainer">
+                <a class="navElement" href="./index.html">Home</a>
+                <a class="navElement" href="./projects.html">Games</a>
+                <a class="navElement" href="./contact.html">Contact</a>
+                <a class="navElement" href="./about.html">About</a>
+            </div>
+            <a class="navMenuToggle" href="javascript:void(0);"
+                onclick="toggleNavMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <script>
+            function toggleNavMenu(){
+                var x = document.getElementById("navMenu");
+                if (x.className === "navMenu") {
+                  x.className += "-expanded";
+                } else {
+                  x.className = "navMenu";
+                }
+            }
+        </script>
+        </div>
+        <div class="infoBody">
+            <h1>Imprint</h1>
+            <p>This service of bitshiftgames.com is provided by:</p>
+            <p>
+              Bitshift Games<br>
+              Alexander Philipp<br>
+              Bugehagenstraße 15<br>
+              23568, Lübeck<br>
+              Germany
+            </p>
+            <p>
+              E-Mail: contact@bitshiftgames.com
+            </p>
+        </div>
+        <div class="footer">
+            <a href="./privacy.html">Privacy Policy</a>
+            <a href="./terms.html">Terms and Conditions</a>
+            <a href="./imprint.html">Imprint</a>
+        </div>
+    </body>
+</html>
