@@ -1,0 +1,92 @@
+.titlePanel{
+    margin-top: 70px;
+    background-color: #cacbd3;
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftBoundInfoSection{
+    background-color: var(--background1);
+    
+    width: calc(100% - 80px);
+    
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+    .leftBoundInfoSection .pictureFrame{
+        background-color: var(--contrast2);
+
+        max-width: 400px;
+        max-height: 400px;
+        width: 70vw;
+        height: 70vw;
+    }
+    .leftBoundInfoSection .textFrame{
+        max-width: 500px;
+        height: 400px - 60px;
+
+        color: var(--contrast1);
+        text-align: right;
+    }
+
+.rightBoundInfoSection{
+    background-color: var(--contrast2);
+    
+    width: calc(100% - 80px);
+    
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+    .rightBoundInfoSection .pictureFrame{
+        background-color: var(--background1);
+        
+        max-width: 400px;
+        max-height: 400px;
+        width: 70vw;
+        height: 70vw;
+    }
+    .rightBoundInfoSection .textFrame{
+        max-width: 500px;
+        height: 400px - 60px;
+
+        color: var(--background1);
+        text-align: left;
+    }
+
+@media (max-width: 1019px) {
+    .leftBoundInfoSection{
+        justify-content: space-around;
+    }
+    .leftBoundInfoSection .textFrame{
+        text-align: center;
+    }
+
+    .rightBoundInfoSection{
+        justify-content: space-around;
+    }
+    .rightBoundInfoSection .textFrame{
+        text-align: center;
+    }
+}

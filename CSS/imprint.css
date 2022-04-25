@@ -3,6 +3,6 @@
     background-color: var(--background1);
     max-width: 800px;
     width: calc(100% - 60px);
-    height: 90vh;
+    height: calc(100vh - 80px - 90px);
     padding: 30px;
 }

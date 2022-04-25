@@ -4,10 +4,17 @@
     width: 100%;
     height: 600px;
 
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../Assets/SplashArtSketch.jpg);
+    background-size: cover;
+    background-position: center;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    row-gap: 60px;
+    
+    color: var(--background1);
 }
     .featuredProjectContainer a{
         text-decoration: none;
@@ -25,8 +32,12 @@
 
         transition: 0.3s;
     }
+    .featuredProjectContainer h1{
+        font-size: clamp(40px, 6vw, 55px);
+        text-align: center;
+    }
     .featuredProjectContainer a:hover{
-        background-color: var(--contrast1);
+        background-color: var(--highlight1);
     }
 
 .leftBoundInfoSection{
