@@ -23,16 +23,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: center;
     column-gap: 40px;
     row-gap: 40px;
 }
     .projectSection .pictureFrame{
         background-color: var(--contrast2);
 
-        max-width: 400px;
-        max-height: 400px;
+        max-width: 250px;
+        max-height: 250px;
         width: 70vw;
         height: 70vw;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 35px;
     }
     .projectSection .textFrame{
         max-width: 500px;

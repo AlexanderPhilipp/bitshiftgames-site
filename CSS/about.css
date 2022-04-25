@@ -9,6 +9,9 @@
     align-items: center;
     justify-content: center;
 }
+    .titlePanel h1{
+        font-size: 38px;
+    }
 
 .leftBoundInfoSection{
     background-color: var(--background1);
@@ -34,6 +37,13 @@
         width: 70vw;
         height: 70vw;
     }
+    .leftBoundInfoSection img{
+        max-width: 450px;
+        max-height: 450px;
+        width: 70vw;
+        height: 70vw;
+    }
+
     .leftBoundInfoSection .textFrame{
         max-width: 500px;
         height: 400px - 60px;
@@ -67,6 +77,13 @@
         width: 70vw;
         height: 70vw;
     }
+    .rightBoundInfoSection img{
+        max-width: 450px;
+        max-height: 450px;
+        width: 70vw;
+        height: 70vw;
+    }
+
     .rightBoundInfoSection .textFrame{
         max-width: 500px;
         height: 400px - 60px;
