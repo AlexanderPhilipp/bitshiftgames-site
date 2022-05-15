@@ -3,12 +3,59 @@
     background-color: #cacbd3;
     width: 100%;
     height: 600px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
+    .swipeContainer{
+        width: 100%;
+        height: 600px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+        .swipeContainer img{
+            height: 600px;
+            transform: translateX(0px);
+            transition: 0.5s;
+            z-index: 0;
+        }
+    
+    .swipeDarkener{
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        top: 70px;
+
+        background-color: black;
+        opacity: 0.3;
+    }
+    .swipeActionContainer{
+        width: calc(100% - 20px);
+        height: 600px;
+        position: absolute;
+        top: 70px;
+
+        padding-left: 10px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .swipeActionContainer img{
+            max-width: 110px;
+            min-width: 75px;
+            width: 12vw;
+
+            transition: 0.2s;
+        }
+        .swipeActionContainer img:active{
+            max-width: 110px;
+            min-width: 65px;
+            width: 5vw;
+        }
+
 
 .gameDescriptionSection{
     background-color: var(--contrast2);
