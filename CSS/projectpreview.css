@@ -22,16 +22,14 @@
     padding-top: 70px;
     padding-bottom: 70px;
 }
+    .gameDescriptionSection p{
+        max-width: 800px;
+    }
 
-.gameInfoSection{
+.downloadSection{
     background-color: var(--background1);
-    color: var(--contrast1);
     
     width: calc(100% - 80px);
-
-    min-height: 350px;
-
-    text-align: center;
     
     padding-left: 40px;
     padding-right: 40px;
@@ -39,25 +37,16 @@
     padding-bottom: 70px;
 
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
 }
-
-.downloadContainer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-    .downloadContainer a{
-        text-decoration: none;
-        padding: 15px;
-        max-width: 100px;
-        color: var(--background1);
-        background-color: var(--contrast2);
-        transition: 0.2s;
+    .downloadButtonContainer{
+        display: flex;
+        flex-direction: column-reverse;
     }
-
-    .downloadContainer a:hover{
-        background-color: var(--highlight1);
+    .downloadSection p{
+        max-width: 800px;
     }
